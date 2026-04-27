@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  //align-items: flex-start;
+}
+
+.register-form {
+  flex: 1.2;
+}
+
+.library-info {
+  width: 400px;
+  padding: 1rem;
+  border-left: 2px solid white;
+  font-size: 0.4rem;
+}
+mat-form-field {
+  width: 100%;
+}
+
+mat-card-header {
+  justify-content: center;
+  display: flex;
+}
+
+mat-card-title {
+  font-size: 2rem;
+  
+}

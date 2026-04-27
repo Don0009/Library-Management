@@ -1,0 +1,24 @@
+<mat-grid-list cols="2" rowHeight="100px" gutterSize="10px">
+
+  <mat-grid-tile>
+    <mat-form-field appearance="fill">
+      <mat-label>Email</mat-label>
+      <input matInput placeholder="Email" formControlName="email">
+      <mat-error>Email is Required</mat-error>
+    </mat-form-field>
+  </mat-grid-tile>
+
+  <mat-grid-tile>
+    <mat-form-field appearance="fill">
+      <mat-label>Password</mat-label>
+      <input [type]="hidepassword ? 'password': 'text'" matInput placeholder="Password" formControlName="password">
+      <button mat-icon-button matSuffix type="button" (click)="hidepassword = !hidepassword">
+        <mat-icon>
+          {{ hidepassword ? 'visibility_off' : 'visibility' }}
+        </mat-icon>
+      </button>
+      <mat-error>Password is Required</mat-error>
+    </mat-form-field>
+  </mat-grid-tile>
+
+</mat-grid-list>

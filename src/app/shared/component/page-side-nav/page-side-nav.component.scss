@@ -1,0 +1,21 @@
+mat-card   {
+    margin: 0.5 auto;
+    width: 90% ;
+    border: 1px solid white;
+
+    h1{
+        text-align: center;
+        letter-spacing: 3px;
+    }
+}
+
+mat-nav-list {
+    background-color: rgba($color: #098, $alpha: 0.5);
+}
+
+mat-nav-list a {
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
